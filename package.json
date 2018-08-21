@@ -4,10 +4,14 @@
   "description": "common configuration of all the micro service",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js"
+    
   },
-  "author": "",
+  "author": "dulingbo",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@git.tap4fun.com:bi-web/node-common-config.git"
+  },
   "dependencies": {
     "@log4js-node/logstashudp": "^1.0.0",
     "koa": "^2.5.0",
