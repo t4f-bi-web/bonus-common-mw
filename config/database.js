@@ -1,7 +1,7 @@
-exports.default = {
-    redisConfig: {
+module.exports = {
+    redisConf: {
         host: 'redis-test',
         port: 6379
     },
-    mysqlConfig: {}
+    mysqlConf: {}
 }
