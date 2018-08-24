@@ -1,7 +1,8 @@
 const CommonMiddleware = require('./lib/commonMiddleware');
-const { API } = require('./config/serives');
+const { API,services } = require('./config/serives');
 
 module.exports = {
     CommonMiddleware,
-    API
+    API,
+    services
 }
