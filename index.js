@@ -1,10 +1,10 @@
 const CommonMiddleware = require('./lib/commonMiddleware');
 const { API,services } = require('./config/serives');
-const RegisterEureka = require('./lib/registerEureka')
+const EurekaClient = require('./lib/registerEureka')
 
 module.exports = {
     CommonMiddleware,
-    RegisterEureka,
+    EurekaClient,
     API,
     services
 }
