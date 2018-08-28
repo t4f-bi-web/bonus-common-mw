@@ -4,7 +4,7 @@
   "description": "common configuration of all the micro service",
   "main": "index.js",
   "scripts": {
-    
+    "start": "node index.js"
   },
   "author": "dulingbo",
   "license": "ISC",
@@ -14,6 +14,8 @@
   },
   "dependencies": {
     "@log4js-node/logstashudp": "^1.0.0",
+    "cloud-config-client": "^1.4.2",
+    "eureka-js-client": "^4.4.1",
     "koa": "^2.5.0",
     "koa-bodyparser": "^4.2.0",
     "koa-generic-session": "^2.0.1",
