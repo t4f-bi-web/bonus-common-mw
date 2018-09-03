@@ -2,67 +2,67 @@
  * 目前的微服务名称以及对应信息
 */
 const services = {
-    'judge_plans':{
+    'bonus-judge-plans':{
         port:3029,
         apiName:'judgePlan'
     },
 
     //员工okr
-    'employee_okrs':{
+    'bonus-employee-okrs':{
         port:3023,
         apiName:'employeeOkr'
     },
 
     //部门okr
-    'department_okrs':{
+    'bonus-department-okrs':{
         port:3025,
         apiName:'departmentOkr'
     },
     
     //员工评价
-    'employee_judgements':{
+    'bonus-employee-judgements':{
         port:3021,
         apiName:'employeeJudge'
     },
 
     //部门评价
-    'department_judgements':{
+    'bonus-department-judgements':{
         port:3022,
         apiName:'departmentJudge'
     },
 
     //周期服务
-    'periods':{
+    'bonus-periods':{
         port:3014,
         apiName:'period'
     },
 
     //附件服务
-    'attachments':{
+    'bonus-attachments':{
         port:3028,
         apiName:'attachments'
     },
 
     //uac
-    'uac_bonus':{
+    'bonus-uac':{
         port:3024,
         apiName:'uac'
     },
 
     //薪人薪事访问
-    'xrxs-service':{
+    'bonus-xrxs-service':{
         port:3016,
         apiName:'xrxs'
     },
 
     //基础员工信息服务
-    'employee-basic-service-bonus':{
+    'bonus-employee-basic-service':{
         port:3027,
         apiName:'basicEmployees'
     },
 
     //基础部门信息服务
-    'department-basic-service-bonus':{
+    'bonus-department-basic-service':{
         port:3026,
         apiName:'basicDepartments'
     }
