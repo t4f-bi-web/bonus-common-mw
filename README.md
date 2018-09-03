@@ -1,8 +1,9 @@
 ## nodejs各服务的一些重复代码封装
 
-### 暴露对象 {CommonMiddleware,EurekaClient,API,services}
+### 暴露对象 {CommonMiddleware,EurekaClient,User,API,services}
 - `CommonMiddleware`:KOA中间件，封装使用了一些项目中通用的中间件
 - `EurekaClient` : 用于注册服务中心和获取服务中心句柄的对象
+- `User`: 提供用户鉴权服务
 - `API`: 提供业务服务的overlay网络调用地址(修改注册Eureka后抛弃)
 - `services`:提供业务服务的名称和信息键值对
 
@@ -23,6 +24,14 @@ module.exports = {
 ```
 `client`:object,提供一个getServerByAppName获取其它服务的实例，此操作应发生在registrEureka之后，具体见registrEureka说明
 `registrEureka(serviceName,port)`:function，向注册中心注册服务，serviceName是服务名，port是服务端口。registrEureka为异步操作，完成后才会对client对象赋值，故使用client.getServerByAppName方法需要在实际操作发生时。
+
+### User
+`User.roles`: 根据employeeId获取权限列表
+
+```
+  const {User} = require('@t4f/node-common-config');
+  const roles = await User.roles(ctx.header.user_id); # [ 'employee' ]
+```
 
 ### API
 略
